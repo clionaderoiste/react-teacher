@@ -17,6 +17,13 @@ class App extends Component {
 
 
   handleClick(e) {
+  /*
+  multi class user credentials for INT
+   other assignEd district b
+
+   [12:17]
+   teacher_10classes P@ssword1
+   */
 
     // AUTH_TOKEN needs to be constantly updated
     var criteria,
