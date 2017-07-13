@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import {Button} from 'react-bootstrap';
 import ClassListComponent from './components/classListComponent.jsx';
 
 
@@ -58,9 +59,9 @@ class App extends Component {
           <h2>React-Teacher App</h2>
         </div>
         <p className="App-intro">
-          <button onClick={this.handleClick}>Fetch Class list</button>
-          <ClassListComponent classes={this.state.classes} />
+          <Button onClick={this.handleClick}>Fetch Class list</Button>
         </p>
+          <ClassListComponent classes={this.state.classes} />
       </div>
     );
   }

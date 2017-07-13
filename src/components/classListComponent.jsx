@@ -2,6 +2,8 @@
  * Created by deroistec on 13/07/17.
  */
 import React from 'react';
+import {ListGroup} from 'react-bootstrap';
+import {ListGroupItem} from 'react-bootstrap';
 
 class ClassListComponent extends React.Component{
 
@@ -11,16 +13,16 @@ class ClassListComponent extends React.Component{
 
     render(){
         return (
-            <ul>
+            <ListGroup>
                 {
                     this.props.classes.map(
                         (item, index)=>{
-                            return <li key={index}>{item.name}</li>
+                            return <ListGroupItem key={index}>{item.name}</ListGroupItem>
                         }
                     )
                 }
 
-            </ul>
+            </ListGroup>
         );
     }
 }
